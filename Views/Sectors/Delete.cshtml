@@ -1,0 +1,12 @@
+<div class="row mb-4 col-md-2 mb-2">
+    <a asp-action="Index" asp-controller="Sectors" class="btn btn-success">Atras</a>
+</div>
+<h1 class="mb-3">Eliminar sector</h1>
+<div class="container">
+    <div class="card alert alert-danger">
+        <div class="card-body">
+            <p>Estas seguro que deseas eliminar el sector con Id: @Model.Id</p>
+                <a class="btn btn-danger" asp-controller="Sectors" asp-action="DeleteSector" asp-route-id="@Model.Id">Eliminar</a>
+        </div>
+    </div>
+</div>

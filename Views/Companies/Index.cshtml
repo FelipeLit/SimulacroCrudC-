@@ -1,0 +1,43 @@
+<div class="row d-flex mb-4">
+    <div class="col-md-6 d-flex justify-content-start align-items-start"> 
+        <a class="btn btn-primary me-2" asp-controller="Home" asp-action="Index">Atras</a>
+        <a class="btn btn-success" asp-controller="Companies" asp-action="Create" asp-route-id="">Crear</a>
+    </div>
+
+    <div class="col-md-6">
+        <form class="d-flex justify-content-end align-items-end" role="search" method="get" asp-action="Index" asp-controller="Companies">
+            <input class="form-control me-2" type="text" placeholder="Buscar" name="Search">
+            <input class="btn btn-outline-success" type="submit" value="Buscar">
+        </form>
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Nit</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Logo</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var item in Model){
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Nit</td>
+                <td>@item.Phone</td>
+                <td><img src="@item.Logo" alt="" width="100px"></td>
+                <td>
+                    <a class="btn btn-primary" asp-controller="Companies" asp-action="Details" asp-route-id="@item.Id">Detalles</a>
+                    <a class="btn btn-danger" asp-controller="Companies" asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
+                    <a class="btn btn-success" asp-controller="Companies" asp-action="Edit" asp-route-id="@item.Id">Editar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

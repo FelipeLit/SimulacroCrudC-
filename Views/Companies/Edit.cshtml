@@ -1,0 +1,39 @@
+@model Companies;
+
+@{
+    ViewData["Title"] = "Editar compañia";
+}
+<div class="row mb-4 col-md-2">
+    <a asp-action="Index" asp-controller="Companies" class="btn btn-success">Atras</a>
+</div>
+
+<h2>Editar de la compañia</h2>
+
+<form asp-action="EditCompany" method="post">
+    <div class="form-control">
+        <input type="text" name="Id" value="@Model.Id" class="form-control" hidden>
+
+        <label for="">Name</label>
+        <input type="text" name="Name" value="@Model.Name" class="form-control">
+
+        <label for="">Nit</label>
+        <input type="text" name="Nit" value="@Model.Nit" class="form-control">
+
+        <label for="">Address</label>
+        <input type="text" name="Address" value="@Model.Address" class="form-control">
+
+        <label for="">Description</label>
+        <input type="text" name="Description" value="@Model.Description" class="form-control">
+
+        <label for="">Logo</label>
+        <input type="text" name="Logo" value="@Model.Logo" class="form-control">
+        
+        <label for="">Phone</label>
+        <input type="text" name="Phone" value="@Model.Phone" class="form-control">
+
+        <label for="">Legal Representative</label>
+        <input type="text" name="LegalRepresentative" value="@Model.LegalRepresentative" class="form-control">
+
+        <button class="btn btn-success mt-3">Editar</button>
+    </div>
+</form>

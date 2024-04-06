@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simulacro", "Simulacro.csproj", "{DFEE9D00-5953-48ED-842A-110FF175E338}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFEE9D00-5953-48ED-842A-110FF175E338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFEE9D00-5953-48ED-842A-110FF175E338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFEE9D00-5953-48ED-842A-110FF175E338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFEE9D00-5953-48ED-842A-110FF175E338}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24887B4E-B00C-462B-8CA3-400D2223A3D8}
+	EndGlobalSection
+EndGlobal

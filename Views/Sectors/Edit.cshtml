@@ -1,0 +1,26 @@
+@model Sectors;
+
+@{
+    ViewData["Title"] = "Editar sector";
+}
+<div class="row mb-4 col-md-2 mb-2">
+    <a asp-action="Index" asp-controller="Sectors" class="btn btn-success">Atras</a>
+</div>
+<h1 class="mb-3">Editar un sector</h1>
+
+
+<form asp-action="EditSector" method="post">
+    <div class="form-group">
+        <input type="text" class="form-control" name="Id" value="@Model.Id" hidden>
+        <label for="">Name</label>
+        <input type="text" class="form-control" name="Name" value="@Model.Name">
+
+        <label for="">Description</label>
+        <input type="text" class="form-control" name="Description" value="@Model.Description">
+
+        <label for="">Author</label>
+        <input type="text" class="form-control" name="Author" value="@Model.Author" >
+
+        <button class="btn btn-primary">Editar</button>
+    </div>
+</form>

@@ -1,0 +1,46 @@
+<div class="row mb-4 col-md-2">
+    <a asp-action="Index" asp-controller="Companies" class="btn btn-success">Atras</a>
+</div>
+
+<h2>Informacion de la compañia</h2>
+<table class="table">
+     <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Nit</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Representante legal</th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>@Model.Id</td>
+            <td>@Model.Name</td>
+            <td>@Model.Nit</td>
+            <td>@Model.Phone</td>
+            <td>@Model.LegalRepresentative</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Informacion adicional</h2>
+<table class="table">
+     <thead>
+        <tr>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Logo</th>
+            <th scope="col">Sector</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>@Model.Description</td>
+            <td><img src="@Model.Logo" alt="" width="100px"></td>
+            <td>@Model.SectorId</td>
+        </tr>
+    </tbody>
+</table>

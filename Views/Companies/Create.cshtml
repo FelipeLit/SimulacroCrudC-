@@ -1,0 +1,35 @@
+@model Companies;
+
+<div class="row mb-4 col-md-2 mb-2">
+    <a asp-action="Index" asp-controller="Companies" class="btn btn-success">Atras</a>
+</div>
+<h1 class="mb-3">Crear una nueva compañia</h1>
+
+
+<form asp-action="CreateCompany" method="post">
+    <div class="form-group">
+        <label for="">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+
+        <label for="">Nit</label>
+        <input type="text" class="form-control" asp-for="Nit">
+
+        <label for="">Address</label>
+        <input type="text" class="form-control" asp-for="Address">
+
+        <label for="">Description</label>
+        <input type="text" class="form-control" asp-for="Description">
+
+        <label for="">Logo</label>
+        <input type="text" class="form-control" asp-for="Logo">
+
+        <label for="">Phone</label>
+        <input type="text" class="form-control" asp-for="Phone">
+
+        <label for="">Legal representative</label>
+        <input type="text" class="form-control" asp-for="LegalRepresentative">
+
+        <button class="btn btn-primary">Enviar</button>
+    </div>
+</form>
+

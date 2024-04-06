@@ -1,0 +1,22 @@
+@model Sectors;
+
+<div class="row mb-4 col-md-2 mb-2">
+    <a asp-action="Index" asp-controller="Sectors" class="btn btn-success">Atras</a>
+</div>
+<h1 class="mb-3">Crear un nuevo sector</h1>
+
+
+<form asp-action="CreateSectors" method="post">
+    <div class="form-group">
+        <label for="">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+
+        <label for="">Description</label>
+        <input type="text" class="form-control" asp-for="Description">
+
+        <label for="">Author</label>
+        <input type="text" class="form-control" asp-for="Author">
+
+        <button class="btn btn-primary">Enviar</button>
+    </div>
+</form>
